@@ -1,12 +1,9 @@
 const express = require('express');
 const app = express();
+const postRoutes= require('./routes/post')
 
 
-app.get("/",(req ,res)=>{
-
-    res.send("hello world");
-
-});
+app.get("/",postRoutes.getposts);
 
 
 app.listen(8080);
