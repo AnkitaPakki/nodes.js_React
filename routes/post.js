@@ -1,10 +1,11 @@
-const getPosts = (req,res)=>{
+const express = require('express');
+const postController = require('../controllers/post');
+const router =express.Router();
 
-    res.send("hello worlddddd");
+router.get('/' , postController.getPosts)
 
-}
+module.exports =router;
 
-module.exports={
 
-    getposts
-}
+
+
