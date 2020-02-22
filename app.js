@@ -28,7 +28,7 @@ mongoose
 
 app.use(morgan("dev"));
 app.use(bodyParser.json());
-//app.use(expressValidator());
+app.use(expressValidator());
 
 app.use("/",postRoute);
 
@@ -36,7 +36,7 @@ app.use("/",postRoute);
 const port=8080;
 app.listen(port,()=>{
 
-console.log(`a node.js api is on 8080`);
+console.log(`a node.js api is on `);
 
 });
 
